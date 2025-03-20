@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onload: đợi trình duyệt load hết trang mới chạy code vào đây -->
+     <!-- <script>
+        window.onload = () =>{
+            const listTagA = document.querySelectorAll("#menu li a")
+            console.log(listTagA)
+        }
+    </script> -->
+
+
+    <!-- <ul id="menu">
+        <li>
+            <a href="#">Mục 1</a>
+        </li>
+        <li>
+            <a href="#">Mục 2</a>
+        </li>
+        <li>
+            <a href="#">Mục 3</a>
+        </li>
+    </ul> -->
+
+    <!-- onblur & onfocus
+     <input type="text" id="input">
+
+     <script>
+        const input = document.querySelector("input")
+        // console.log(input.value) //Trả ra string rỗng
+
+        input.onblur = (event) => {
+            // console.log(event) // tham số event có sẵn trong js. event.target là lấy ra được ô input
+            // event.target.value = event.target.value.toUpperCase();
+            input.value = input.value.toUpperCase(); // lấy ra giá trị trong ô input vừa điền rồi gán llaij cho thuộc tính value của thẻ input
+            input.style.color = "#C78F9A"
+            input.style.background = "white"
+        }
+
+        input.onfocus = (event) => {
+            event.target.style.background = "#FFE391";
+        }
+
+        // onkeydown & onkeyup:
+        input.onkeydown = (event) => {  // bắt đc sự kiện ngay khi ấn xuống rồi thực hiện các sự kiện rồi mới insert vào ô input 
+            alert(event.key)
+            console.log(event.key)
+        }
+
+        input.onkeyup = (event) => {  // nhả tay ra rồi, chữ đã được insert vào ô input rồi mới chạy vào hàm thực hiện sự kiện nào đó
+            alert(event.key)
+            console.log(event.key)
+        }
+
+     </script> -->
+
+     <!-- onchange -->
+    <label for="color">Chọn màu bạn thích</label>
+    <select name="mauSac" id="color">
+        <option value="white">Màu trắng</option>
+        <option value="yello">Màu vàng</option>
+        <option value="black">Màu đen</option>
+    </select>
+
+    <script>
+        const selectColor = document.querySelector('#color')
+        selectColor.onchange = (event) =>{
+            console.log(event.target.value)
+        }
+    </script>
+</body>
+</html>

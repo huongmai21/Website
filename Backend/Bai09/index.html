@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .title{
+            color: green;
+        }
+
+        #menu li a{
+            color: red;
+        }
+
+        /* Lấy ra phần tử li thứ 2 */
+        #menu li:nth-child(2) a{  
+            color: blue;
+        }
+
+        #menu-2 li a{
+            color: blueviolet;
+        }
+    </style>
+
+    <h2 id="h2-01">Noi dung <b>01</b></h2>
+    <h2 id="h2-02">Noi dung 02</h2>
+    <h2 id="h2-03" class="title">Noi dung 03</h2>
+
+    <h3 class="title">Noi dung the h3</h3>
+    <h4 class="title">Noi dung the h4</h4>
+
+    <ul id="menu">
+        <li>
+            <a href="#">Mục 1</a>
+        </li>
+        <li>
+            <a href="#">Mục 2</a>
+        </li>
+        <li>
+            <a href="#">Mục 3</a>
+        </li>
+    </ul>
+
+    <ul id="menu-2">
+        <li>
+            <a href="#">Mục 1</a>
+        </li>
+        <li>
+            <a href="#">Mục 2</a>
+        </li>
+        <li>
+            <a href="#">Mục 3</a>
+        </li>
+    </ul>
+    <script src="script.js"></script>
+
+</body>
+</html>

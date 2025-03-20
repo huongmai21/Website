@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 4.1. document.createElement()
+    // const div = document.createElement("div");
+
+    // div.innerHTML = `
+    //   <div id="ads-1" class="ads tes1 tes2 tes3">
+    //     <button id="close-ads">X</button>
+    //     <a href="#" target="_blank">
+    //       <img src="https://denhatdoc.com/wp-content/uploads/2017/05/6-cach-thiet-ke-hinh-anh-quang-cao-facebook-tuong-1.jpg" alt="" width="200px">
+    //     </a>
+    //   </div>
+    // `;
+
+    // document.querySelector("body").appendChild(div);
+  </script>
+
+
+  <script>
+    // 4.2. document.createTextNode()
+
+    // const p = document.createElement("p");
+
+    // p.innerHTML = "Nội dung...";
+
+    // const text = document.createTextNode("Nội dung...");
+    // p.appendChild(text);
+
+    // document.querySelector("body").appendChild(p);
+  </script>
+
+
+
+  <ul id="menu">
+    <li>1 <input value="Công việc 1" /> <button>X</button></li>
+    <li>2 <input value="Công việc 2" /> <button>X</button></li>
+    <li>3 <input value="Công việc 3" /> <button>X</button></li>
+  </ul>
+
+  <button id="button">Add</button>
+
+  <script>
+    // 4.3
+    // const menu = document.querySelector("#menu");
+    // const button = document.querySelector("#button");
+
+    // button.addEventListener("click", () => {
+    //   const li = document.createElement("li");
+    //   li.innerHTML = "Item New";
+    //   menu.appendChild(li);
+    // });
+  </script>
+
+  <script>
+    // 4.4
+    // const menu = document.querySelector("#menu");
+    // const button = document.querySelector("#button");
+
+    // let count = 1;
+
+    // button.addEventListener("click", () => {
+    //   const liFirst = menu.querySelector("li:nth-child(1)");
+
+    //   const li = document.createElement("li");
+    //   li.innerHTML = "Item New " + count;
+
+    //   menu.insertBefore(li, liFirst);
+
+    //   count++;
+    // });
+  </script>
+
+  <script>
+    // 4.5
+    // const menu = document.querySelector("#menu");
+    // const buttonsDelete = menu.querySelectorAll("button");
+
+    // for (const buttonDelete of buttonsDelete) {
+    //   buttonDelete.addEventListener("click", (event) => {
+    //     console.log(event.target.parentNode);
+    //     menu.removeChild(event.target.parentNode);
+    //   });
+    // }
+  </script>
+
+
+  <script>
+    // 4.6
+    // const menu = document.querySelector("#menu");
+    // const button = document.querySelector("#button");
+
+    // button.addEventListener("click", () => {
+    //   const liSecond = menu.querySelector("li:nth-child(2)");
+
+    //   const li = document.createElement("li");
+    //   li.innerHTML = `
+    //     4 <input value="Công việc 4" /> <button>X</button>
+    //   `;
+
+    //   menu.replaceChild(li, liSecond);
+    // });
+  </script>
+
+
+
+</body>
+
+</html>
