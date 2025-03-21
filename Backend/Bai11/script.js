@@ -38,8 +38,8 @@
       // console.log(a);
 
 
-// 2.1
-  // console.log(a);
+// 2.1: biến trong hoisting
+  // console.log(a); // Trả về undefind, ko báo lỗi
   // var a = "Hello world!";
 
   // Chuyển tương đương
@@ -95,7 +95,7 @@
   // const button = document.querySelector("#button");
 
   // button.addEventListener("click", function() {
-  //   console.log(this);
+  //   console.log(this); // Trả về nội dung thẻ button
   // });
 
 
@@ -159,6 +159,16 @@
 
 
   // Ví dụ 1: JSON có giá trị là Object
+
+  var objectJS = {
+    fullName: "Đặng Phương Nam",
+    phone: "0123456789",
+    email: "namtest@gmail.com",
+    test(){
+      console.log("test")
+    }
+  }
+
     // var objectJSON = `
     //   {
     //     "fullName": "Đặng Phương Nam",
